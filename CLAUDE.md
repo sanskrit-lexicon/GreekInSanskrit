@@ -4,15 +4,43 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**GreekInSanskrit** is a research repository for identifying and correcting Greek text that appears in the Cologne Digital Sanskrit Lexicon dictionaries (especially in etymological sections of BEN, BOP, BUR, GRA, and others). Many CDSL dictionaries cite Greek cognates or loan-words; this repo provides tools and data for ensuring those Greek passages are correctly encoded.
+**GreekInSanskrit** is a Sanskrit Lexicon **data-store** repository — part of the Cologne Digital Sanskrit Lexicon (CDSL) infrastructure.
 
-## Contents
+## Repo Category
 
-| File | Purpose |
-|---|---|
-| `CVCVCVCV.pdf` | Research paper on consonant-vowel patterns in Sanskrit and Greek |
-| `accent-percent.pdf` | Analysis of accent/stress patterns |
-| `endings.pdf` | Greek word-ending analysis for Sanskrit comparison |
-| `praefixoids.pdf` | Analysis of prefix-like elements in Greek-Sanskrit borrowings |
+`data-store` — see the [tooling runbook](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/runbook/cologne-tooling-runbook.md) for category-specific conventions.
 
-Issues and research tasks are tracked via the [GitHub issue tracker](https://github.com/sanskrit-lexicon/GreekInSanskrit/issues).
+## GitHub Issue Conventions
+
+This repository uses the **Cologne tooling-repo taxonomy**. All issues must have:
+- **Exactly one type label** (9 options)
+- **Exactly one severity label** (4 levels)
+- **One milestone** (5 options)
+
+### Type Labels
+- `bug` — Code defect (wrong output, broken contract)
+- `feature` — Net-new capability
+- `enhancement` — Improvement to existing capability
+- `performance` — Speed, memory, throughput optimization
+- `tech-debt` — Refactoring, cleanup, dependency updates
+- `security` — CVE, auth issue, credential exposure
+- `documentation` — Prose docs, API docs, comments
+- `infrastructure` — CI/CD, deploy, data pipelines, build tooling
+- `question` — Research, proposals, open discussions
+
+### Severity Labels
+- `trivial` — Cosmetic, < 1 hour
+- `minor` — Single function/component
+- `major` — Multiple files, design decision
+- `critical` — Blocks users, data loss/security CVE
+
+### Milestones
+- **API Stability** — performance, security, regressions
+- **User Experience** — bugs, features, enhancements
+- **Data Quality** — data-pipeline issues, integrity
+- **Developer Experience** — tech-debt, infrastructure, docs
+- **Community** — questions, proposals, discussions
+
+## Cross-Repo Coordination
+
+The org-level project [Tooling Roadmap](https://github.com/orgs/sanskrit-lexicon/projects/9) tracks tool work across all repositories.
