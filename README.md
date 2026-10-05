@@ -1,5 +1,7 @@
 # GreekInSanskrit
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23151336.svg)](https://doi.org/10.5281/zenodo.23151336)
+
 _Created: 15-04-2015 · Last updated: 11-07-2026_
 
 Supplying the **missing Greek-script text** for the Cologne digitizations of
